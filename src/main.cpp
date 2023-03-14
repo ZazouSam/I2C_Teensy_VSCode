@@ -35,41 +35,14 @@ void loop()
     int i = Wire.read(); // receive a byte as character
     if (i == 0x69 || i == 0xE1 || i == 0xE2 || i == 0xE3 || i == 0xE4 || i == 0xE5 || i == 0xE6 || i == 0xEE)
     {
-      //Serial.print("Rien"); // print the character
+      // Serial.print("Rien"); // print the character
     }
     else
     {
       // prints the value of the variable i in hexadecimal format
       Serial.printf("%x\n\r", i);
-      // Serial.print("read: ");
-      // Serial.println(i); // print the character
     }
-    // char c = Wire.read(); // receive a byte as character
-
-    // if (xEncore == 1 && c == 'X')
-    // {
-    //   // Serial.print("Rien");        // print the character
-    // }
-
-    // if (c == 'X')
-    // {
-    //   xEncore = 1;
-    // }
-    // else
-    // {
-    //   // Serial.print("read: ");
-
-    //   Serial.println(c); // print the character
-    //   flag++;
-    //   if (flag == 2)
-    //   {
-    //     //Serial.print(" A été appuyé"); // print the character
-    //     Serial.println();
-    //     flag = 0;
-    //   }
-    //   }
   }
-  // Serial.println();
 
   digitalWrite(led, LOW);
   delay(5);
